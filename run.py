@@ -2,20 +2,12 @@
 import random
 
 # declare a variable to generate a random number
-guess_number = random.randint(1, 15)
+# guess_number = random.randint(1, 15)
 # print("Random number generated:", guess_number)
 
 # create a game function and the play again function
 
-try:
-    # Ask the user to guess a number
-    print("Welcome to the Number Guessing Game. Have fun!")
-    user_guess = int(input("Guess a number between 1 and 15:\n"))
-    print(f'Your guess is: {user_guess}')
-    print("Correct guess is:", guess_number)
-except Exception as e:
-    print(f"An error occurred. Invalid input!")
-    print("Please enter a valid number between 1 and 15.")
+
 
 # create a game function
 
@@ -26,4 +18,47 @@ def game():
 
     # Welcome the user to the game
     print("Welcome to the Number Guessing Game. Have fun!")
+
+    # initiate random numbers and assign it to a variable
+    guess_number = random.randint(1, 15)
+
+    # Guess user input that prompts the user to guess a number
+    print("Guess a number between 1 and 15:\n")
     
+    # Create a WHile loop that keep running  for guessing
+    while correct_guess == False:
+        # run this Try/ Except block to catch errors
+        try:
+            # Ask the user to guess a number
+            user_guess = int(input("Enter your Guess:\n"))
+            #print(f'Your guess is: {user_guess}')
+            #print("Correct guess is:", guess_number)
+        except Exception as e:
+            print(f"An error occurred. Game Over!!")
+            return
+        # initiate a logic to check the guess
+        if user_guess < guess_number:
+            print("Your guess is too low. Try again!")
+            # increment the number of attempts guessed
+            attempts_guessed += 1
+
+        elif user_guess > guess_number:
+            print("Your guess is too high. Try again!")
+            attempts_guessed += 1
+
+        elif user_guess == guess_number:
+            attempts_guessed += 1
+            print(f"Congratulations! The correct guess was {guess_number} and you guessed it in {attempts_guessed} attempts.")
+            # set the correct guess to True to end the loop
+            correct_guess = True
+
+
+
+
+
+
+
+
+# Game function call
+
+game()
