@@ -17,7 +17,6 @@ def play_again():
         return
 
 # create a game function
-
 def game():
     # create a variable to keep tract of the number of attempts guessed
     attempts_guessed = 0
@@ -61,7 +60,6 @@ def game():
 
         # Call the play again function
     play_again()
-
 
 
 
