@@ -16,7 +16,7 @@ def play_again():
         print("Thank you for playing!")
         return
 
-# create a game function and the play again function
+# create a game function
 
 
 
