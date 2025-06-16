@@ -18,10 +18,6 @@ def play_again():
 
 # create a game function
 
-
-
-# create a game function
-
 def game():
     # create a variable to keep tract of the number of attempts guessed
     attempts_guessed = 0
@@ -63,13 +59,13 @@ def game():
             # set the correct guess to True to end the loop
             correct_guess = True
 
-
-
-
+        # Call the play again function
+        play_again()
 
 
 
 
 # Game function call
+
 
 game()
