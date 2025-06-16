@@ -6,6 +6,16 @@ import random
 
 # create a function to play again
 
+def play_again():
+    # prompt the user to check if they want to play again
+    response = input("Would you like to play again? (yes/no):\n")
+    # create a logic condition to check what to do
+    if response == "yes" or response == "Yes" or response == "YES" or response == "y" or response == "Y":
+        game()
+    else:
+        print("Thank you for playing!")
+        return
+
 # create a game function and the play again function
 
 
