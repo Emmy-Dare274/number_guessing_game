@@ -3,7 +3,8 @@ import random
 
 # declare a variable to generate a random number
 # guess_number = random.randint(1, 15)
-# print("Random number generated:", guess_number)
+
+# create a function to play again
 
 # create a game function and the play again function
 
