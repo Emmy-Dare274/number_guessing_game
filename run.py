@@ -60,7 +60,7 @@ def game():
             correct_guess = True
 
         # Call the play again function
-        play_again()
+    play_again()
 
 
 
