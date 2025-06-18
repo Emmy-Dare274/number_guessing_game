@@ -7,11 +7,11 @@ It is a game developed with the excitement of gambling and predicting winning nu
 
 Users can try to predict the computer chosen number by guessing what number the computer has chosen, if they are lucky, they will guess correctly on the first attempt otherwise they keep guessing until guessed correctly.
 
-![Number Guessing Game](./assets/images/Iamresponsive.png)
+![Number Guessing Game](/assets/images/Iamresponsive.png)
 
 [Here is the live version of my project](https://numb-guessing-game-e7bd1e907d76.herokuapp.com/)
 
-![View of project](./assets/images/numb-game-photo.png)
+![View of project](/assets/images/numb-game-photo.png)
 
 ### How to play
 
