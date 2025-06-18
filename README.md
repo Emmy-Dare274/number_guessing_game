@@ -7,14 +7,23 @@ It is a game developed with the excitement of gambling and predicting winning nu
 
 Users can try to predict the computer chosen number by guessing what number the computer has chosen, if they are lucky, they will guess correctly on the first attempt otherwise they keep guessing until guessed correctly.
 
+![Number Guessing Game](assets/images/Iamresponsive.png)
 
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+[Here is the live version of my project](https://numb-guessing-game-e7bd1e907d76.herokuapp.com/)
 
-Welcome,
+![View of project](assets/images/numb-game-photo.png)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
+### How to play
 
-## Reminders
+This Number Guessing Game is based on the classic secret number game where the computer selects a secret number, and the user player tries to guess within number of attempts (unlimited number of attempts to make it fun) with constant feedback on whether the guess is too high or too low.
+
+#### Game Objective:
+Is to guess the secret number chosen by the computer.
+
+
+
+
+
 
 - Your code must be placed in the `run.py` file
 - Your dependencies must be placed in the `requirements.txt` file
