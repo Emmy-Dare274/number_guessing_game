@@ -45,18 +45,68 @@ Is to guess the secret number chosen by the computer.
     - If chose `no` the game is aborted with a thank you message
 
 
+## Data model
+The program uses input() function to get the user's choices and a series of validation functions to ensure that the user inputs are valid for the game.
+
+## Technologies used
+
+### Language
+#### Main Language
+
+- Python: programming language for the project
+
+#### Other Languages
+- JavaScript
+- CSS
+- HTML
+
+### Programs used
+- VSCODE: IDE used for version control and writing code
+- Git: version control system used for managing and tracking changes to the project's codebase
+- GitHub: web-based hosting service used for version control and storing the project's code after being pushed from VSCODE
+- Heroku: cloud platform used for deploying and hosting the project's web application
+
+## Testing
+
+I have manually tested this project by doing the following:
+
+- Passed the code through the Python PEP8 linter and confirmed there are no major problems
+- Given invalid inputs such as strings when numbers are expected, out of bounds inputs
+- Tested in my local terminal and Code Institute Heroku terminal
+
+## Bugs
+#### Solved Bugs
+- During the time of writing this project, I was getting ValueBased literal Errors because I had forgotten that the I need to convert the user input to integer to work with the computer randomly selected numbers. I fixed this by using int() round the input() prompt where necessary.
+
+- My While loop function was returning the wrong result because I hadn't structured the `if` statement in the loop properly.
+
+- My image documentation isn't showing despite working and readjusting the file path from the assets folder until I worked on the file path manually.
+
+## Remaining Bugs
+    - No bugs remaining except the long line of the words by Python
+
+## Validator Testing
+    - No errors were recorded from the PEP8 Python Online
 
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
 
-## Creating the Heroku app
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Deployment
+To deploy this project, follow these steps:
 
-1. `heroku/python`
-2. `heroku/nodejs`
+1. Fork and clone this repository to your local machine.
+2. Create a new Heroku app.
+3. In the Heroku dashboard, navigate to the app's settings and set the buildpacks to `Python` and `NodeJS` in that order.
+4. Connect your Heroku app to the repository by linking it to your forked copy of the repository.
+5. Click on the <strong>"Deploy"</strong> button in the Heroku dashboard.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+After following these steps, your app should be successfully deployed to Heroku. 
+
+## Credits
+
+- Code Institute for the deployment terminal and mockups
+- Heroku for the deployment
+
+
+
 
