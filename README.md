@@ -9,18 +9,40 @@ Users can try to predict the computer chosen number by guessing what number the 
 
 ![Number Guessing Game](assets/images/Iamresponsive.png)
 
+
+
 [Here is the live version of my project](https://numb-guessing-game-e7bd1e907d76.herokuapp.com/)
 
+
+
 ![View of project](assets/images/numb-game-photo.png)
+
+
 
 ### How to play
 
 This Number Guessing Game is based on the classic secret number game where the computer selects a secret number, and the user player tries to guess within number of attempts (unlimited number of attempts to make it fun) with constant feedback on whether the guess is too high or too low.
 
-#### Game Objective:
+### Game Objective:
 Is to guess the secret number chosen by the computer.
 
+### Features
 
+#### Existing Features
+- Random number generation
+    - Computer randomly choose a secret number
+    - The player cannot see what number the computer has chosen
+    - The player guess the secret number by inputting a number
+    - Accepts user input
+    - Check user input and compare with computer's secret number to determine whether it's a correct guess.
+    - Counts the number of user attempts to guess the number
+
+- Input validation and error-checking
+    - A user must enter a number
+    - You cannot enter letters, strictly numbers
+    - Game over if anything aside number is input
+    - Prompt user whether they like to play again by input yes or no
+    - If chose `no` the game is aborted with a thank you message
 
 
 
