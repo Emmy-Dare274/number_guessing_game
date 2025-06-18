@@ -83,11 +83,13 @@ I have manually tested this project by doing the following:
 - My image documentation isn't showing despite working and readjusting the file path from the assets folder until I worked on the file path manually.
 
 ## Remaining Bugs
-    - No bugs remaining except the long line of the words by Python
+- No bugs remaining except the long line of the words by Python
 
 ## Validator Testing
-    - No errors were recorded from the PEP8 Python Online
 
+- No errors were recorded from the PEP8 Python Online
+
+![View of PEP8](assets/images/pep8.png)
 
 
 
