@@ -20,7 +20,19 @@ def game_rule():
     print("6. Try to guess the number in as few attempts as possible.")
     print("=" * 50 + "\n")
 
-#game_rule()
+
+def play_again():
+    ''' This function prompts the user if they want to play again or quit the game.'''
+    while True:
+        response = input("Would you like to play again? (yes/no):\n").strip().lower()
+        if response in ["yes", "y"]:
+            return True
+        elif response in ["no", "n"]:
+            print("Thank you for playing! Goodbye!")
+            return False
+        else:
+            print("Invalid input. Please enter 'yes' or 'no'.")
+
 
 def game():
     ''' The Main game logic function that input validation, repeat guessing, 
@@ -70,24 +82,17 @@ def game():
             
         except ValueError:
             print("Invalid input. Please enter a number between 1 and 15.")
-                
-
-game()
 
 
+def main():
+    ''' Main function to run the game '''
+    game_rule()
 
-
-
-
-'''
-def play_again():
-    # prompt the user to check if they want to play again
-    response = input("Would you like to play again? (yes/no):\n")
-    # create a logic condition to check what to do
-    if response == "yes" or response == "Yes" or response == "YES":
+    while True:
         game()
-    else:
-        print("Thank you for playing!")
-        return
+        if not play_again():
+            break
 
-'''
+
+if __name__ == "__main__":
+    main()
