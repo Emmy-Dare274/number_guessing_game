@@ -6,11 +6,12 @@ This game generates a random number between 1 and 15,
 and prompts the user to guess the number.
 User tries to guess the number, and the game provides feedback. '''
 
+
 def game_rule():
     ''' This function prints the game rules to the user '''
     print("\n" + "=" * 50)
     print("NUMBER GUESSING GAME - RULES".center(50))
-    print ("=" * 50)
+    print("=" * 50)
     print("The rules are simple:")
     print("1. I will think of a number between 1 and 15.")
     print("2. You have to guess the number.")
@@ -35,8 +36,7 @@ def play_again():
 
 
 def game():
-    ''' The Main game logic function that input validation, repeat guessing, 
-    and user input handling.'''
+    ''' The Main game logic function that input validation, repeat guessing, and user input handling.'''
     attempts = 0
     guessed_numbers = []
     target = random.randint(1, 15)
@@ -53,7 +53,7 @@ def game():
             if not user_input:
                 print("Empty input. Please enter a number between 1 and 15.")
                 continue
-                
+
             guess = int(user_input)
             # Check number range
             if guess < 1 or guess > 15:
@@ -79,7 +79,7 @@ def game():
                 print(f"It took you {attempts} attempt{'s' if attempts > 1 else ''}.")
                 print("="*50)
                 return
-            
+
         except ValueError:
             print("Invalid input. Please enter a number between 1 and 15.")
 

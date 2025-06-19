@@ -7,7 +7,7 @@ It is a game developed with the excitement of gambling and predicting winning nu
 
 Users can try to predict the computer chosen number by guessing what number the computer has chosen, if they are lucky, they will guess correctly on the first attempt otherwise they keep guessing until guessed correctly.
 
-![Number Guessing Game](assets/images/Iamresponsive.png)
+![Number Guessing Game](assets/images/deviceresponse.png)
 
 
 
@@ -15,7 +15,7 @@ Users can try to predict the computer chosen number by guessing what number the 
 
 
 
-![View of project](assets/images/numb-game-photo.png)
+![View of project](assets/images/gameview.png)
 
 
 
@@ -89,7 +89,7 @@ I have manually tested this project by doing the following:
 
 - No errors were recorded from the PEP8 Python Online
 
-![View of PEP8](assets/images/pep8.png)
+![View of PEP8](assets/images/linter.png)
 
 
 
